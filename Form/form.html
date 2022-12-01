@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+<body>
+  <form>
+    <label for="email">Inserisci la tua eMail</label>
+    <input type="email" id="email">
+<br><br>
+    <label for="psw">Inserisci una Password</label>
+    <input type="password" id="psw" name="psw">
+<br><br>
+    <label for="name">Come ti chiami?</label> 
+    <input type="text" name="name" placeholder="scrivi il tuo nome">
+    <input type="text" name="lastname" placeholder="scrivi il tuo cognome">
+<br><br>
+    <label for="data_nascita">Quando sei nato/a?</label>
+    <input type="date" id="data_nascita" name="data_nascita">
+<br><br>
+    <label for="telefono">Inserisci un numero di telefono</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="+39">
+<br><br>
+    <label for="choose_plan">Scegli un piano di pagmento</label>
+    <select name="choose_plan" id="choose_plan">
+     <optgroup label="Piano gratuito"></optgroup>
+      <option value="free_plans">piano gratuito</option>
+     <optgroup label="Piano a pagamento"></optgroup>
+      <option value="25">piano da 25$</option>
+      <option value="50">piano da 50$</option>
+      <option value="80">piano da 80$</option>
+    </select>
+<br><br>
+    <label for="pro_plan">Piano Pro</label>
+    <input type="checkbox" name="pro_plan" value="pro_plan"/>
+<br><br>
+    <label for="credit_number">Inserisci una carta di credito</label>
+    <input name="credit_number" type="tel" maxlength="19" placeholder="Numero Carta"> 
+    
+    <label for="cvc">Codice CVC</label>
+    <input name="cvcnumber" type="text" placeholder="XXX">
+    
+    <label for="expdate">Valida fino al</label>
+    <input name="expdate" type="date" min="2022-12-01" >
+<br><br> 
+      <button type="submit">Invia</button>
+  </form>
+ </body>
+</html>
